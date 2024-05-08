@@ -1,0 +1,53 @@
+.image_history {
+    display: flex;
+    align-items:center;
+    border: 5px solid;
+    border-image: url('egg.svg') 30 round;
+    box-shadow: 0px 0px 10px 20px rgba(116, 253, 255, 0.3);
+  }
+  
+  .flex_item {
+    padding: 0px;
+    position: relative;
+    flex: 1;
+    display: flex; /* Change to display flex */
+    flex-direction: column;
+  }
+  
+  .image_container {
+    flex: 1; /* Take up remaining space */
+  }
+  
+  .text_overlay {
+    font-family: "pixelfont";
+    background-color: rgba(248, 165, 209, 0.5);
+    box-shadow: 0px 0px 10px rgba(116, 253, 255, 0.5);
+    text-shadow: rgb(116, 253, 255) 1px 0 10px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Initially hide the text */
+  }
+  
+  .flex_item:hover .text_overlay {
+    opacity: 1; /* Show the text on hover */
+  }
+  .para{
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width:430px) {
+
+    .text_overlay {
+        font-size:10px;
+
+    }
+    .para{
+        font-size: 10px;
+      }
+}

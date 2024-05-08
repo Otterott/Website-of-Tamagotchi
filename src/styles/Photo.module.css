@@ -1,0 +1,29 @@
+.image{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.image img {
+    width: 100%;
+}
+
+.yesorno {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 967px) {
+  .image {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+    .image {
+      width: 90%;
+    }
+  }

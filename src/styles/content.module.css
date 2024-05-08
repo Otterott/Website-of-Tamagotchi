@@ -1,0 +1,86 @@
+
+
+.para {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    width: auto;
+    margin: 100px;
+    margin-top: 0%;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+.header {
+    font-family: 'pixelfont';
+    margin: auto;
+    text-align: center;
+    color: deeppink;
+}
+
+.hOne {
+    font-size: 70px;
+}
+
+.App {
+    h2 {
+        font-size: 50px;
+    }
+}
+
+.container {
+    position: relative;
+    width: 110%;
+}
+
+.mainlink {
+    position: absolute;
+    font-family: "pixelfont";
+    color: rgb(136, 136, 136);
+    font-size: 55px;
+    text-decoration: none;
+    top: 77%;
+    left: 39.5%;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+        color: rgb(116, 253, 255);
+    }
+}
+
+.bg {
+    background-image: url("historybg.png");
+    min-height: 200px;
+    font-size: 40px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: rgb(116, 253, 255) 2px 0 10px;
+    box-shadow: 15px 5px 50px rgb(248, 165, 209);
+  }
+
+
+@media only screen and (max-width:430px) {
+    .para {
+        width: 90%;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .header {
+        font-size: 20px;
+    }
+
+    .mainlink {
+        font-size: 16.5px;
+    }
+
+    .hOne {
+        font-size: 30px;
+    }
+
+    .bg{
+        min-height: 50px; 
+    }
+}

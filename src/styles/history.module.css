@@ -1,0 +1,57 @@
+.para_history {
+    height: auto;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+.text_overlay {
+    font-family: "pixelfont";
+    background-color: rgba(248, 165, 209, 0.5);
+    box-shadow: 0px 0px 10px rgba(116, 253, 255, 0.5);
+    text-shadow: rgb(116, 253, 255) 1px 0 10px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.flex_item {
+    padding: 5px;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+}
+
+.flex_item:hover .text_overlay {
+    opacity: 1;
+    /* Show the text on hover */
+}
+
+
+
+
+
+@media only screen and (max-width:430px) {
+    .para_history {
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .text_overlay {
+        font-size:10px;
+
+    }
+}
